@@ -1,0 +1,78 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html, body, #root {
+  height: 100%;
+}
+
+/* ─── Scrollbar ──────────────────────────────────────────── */
+::-webkit-scrollbar {
+  width: 6px;
+}
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+::-webkit-scrollbar-thumb {
+  background-color: rgba(120, 120, 120, 0.35);
+  border-radius: 4px;
+}
+
+/* ─── Markdown Body ──────────────────────────────────────── */
+.markdown-body h1 {
+  @apply text-xl font-bold mt-5 mb-3 text-neutral-900 dark:text-neutral-100;
+}
+.markdown-body h2 {
+  @apply text-lg font-semibold mt-4 mb-2 text-neutral-900 dark:text-neutral-100;
+}
+.markdown-body h3 {
+  @apply text-base font-semibold mt-3 mb-1.5 text-neutral-800 dark:text-neutral-200;
+}
+.markdown-body p {
+  @apply mb-3 leading-relaxed text-neutral-700 dark:text-neutral-300;
+}
+.markdown-body ul {
+  @apply list-disc pl-6 mb-3 space-y-1;
+}
+.markdown-body ol {
+  @apply list-decimal pl-6 mb-3 space-y-1;
+}
+.markdown-body li {
+  @apply text-neutral-700 dark:text-neutral-300 leading-relaxed;
+}
+.markdown-body a {
+  @apply text-brand-600 dark:text-brand-500 underline underline-offset-2 hover:text-brand-700 dark:hover:text-brand-400 transition-colors;
+}
+.markdown-body strong {
+  @apply font-semibold text-neutral-900 dark:text-neutral-100;
+}
+.markdown-body em {
+  @apply italic text-neutral-700 dark:text-neutral-300;
+}
+.markdown-body code {
+  @apply font-mono text-[13px] bg-neutral-100 dark:bg-neutral-800 text-brand-700 dark:text-brand-300 px-1.5 py-0.5 rounded;
+}
+.markdown-body pre {
+  @apply bg-neutral-100 dark:bg-neutral-800 rounded-xl p-4 mb-3 overflow-x-auto;
+}
+.markdown-body pre code {
+  @apply bg-transparent p-0 text-neutral-800 dark:text-neutral-200;
+}
+.markdown-body blockquote {
+  @apply border-l-4 border-brand-300 dark:border-brand-700 pl-4 italic text-neutral-600 dark:text-neutral-400 my-3;
+}
+.markdown-body hr {
+  @apply border-neutral-200 dark:border-neutral-800 my-4;
+}
+.markdown-body table {
+  @apply w-full border-collapse mb-4 text-sm;
+}
+.markdown-body th {
+  @apply bg-neutral-100 dark:bg-neutral-800 px-3 py-2 text-left font-semibold text-neutral-900 dark:text-neutral-100 border border-neutral-200 dark:border-neutral-700;
+}
+.markdown-body td {
+  @apply px-3 py-2 text-neutral-700 dark:text-neutral-300 border border-neutral-200 dark:border-neutral-700;
+}
+.markdown-body tr:nth-child(even) {
+  @apply bg-neutral-50 dark:bg-neutral-900;
+}
