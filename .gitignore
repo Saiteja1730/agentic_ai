@@ -90,3 +90,17 @@ Thumbs.db
 # --- Logs ---
 *.log
 logs/
+
+# Python tooling
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+htmlcov/
+
+# React/Vite cache
+/frontend/.cache/
+
+# Misc logs
+*.out
+*.err
